@@ -11,6 +11,7 @@ import { MatInputModule,
          MatButtonModule,
          MatToolbarModule,
         MatExpansionModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './posts/header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
 
   ],
   providers: [],
