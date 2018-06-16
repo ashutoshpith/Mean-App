@@ -15,9 +15,14 @@ export class PostsService {
     return [...this.posts];
   }
 
+  getPostUpdatedListener() {
+    return this.postsUpadated.asObservable();
+  }
+
   addPost(title: string, content: string) {
     const post: Post = {title: title, content: content};
     this.posts.push(post);
+    this.postsUpadated.next([...this.posts]);
   }
   }
 
