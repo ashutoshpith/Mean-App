@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 
 export class PostService {
   private posts: Post[] = [];
-  private postsUpdated = new Subject<Post[]>();
+  private postsUpadated = new Subject<Post[]>();
 
   constructor(private http: HttpClient) {}
   }
+
