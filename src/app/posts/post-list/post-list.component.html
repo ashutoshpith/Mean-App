@@ -6,6 +6,13 @@
   <p>
     {{ post.content }}
   </p> 
+  
+    <mat-action-row>
+      <button mat-button color="accent">Edit</button>
+      <button mat-button color="warn">Delete</button>
+      
+    </mat-action-row>
+  
 </mat-expansion-panel>
 </mat-accordion>
 <p class="text-info" *ngIf="posts.length <= 0">No Content </p>
